@@ -1,0 +1,390 @@
+/* Hero Background */
+#hero-section {
+  background-image: url("/saas-project-assets/backgrounds/background-top.svg");
+  padding-bottom: 1rem;
+}
+
+/* Navbar Styles */
+nav, nav .navlinks-wrapper, ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav .logo {
+  width: 10rem;
+  padding: 1rem;
+}
+
+nav .navlinks-wrapper {
+  width: 40%;
+  color: var(--gray-text);
+}
+
+.navlinks-wrapper ul {width: 70%;}
+
+.navlinks-wrapper ul li {
+  cursor: pointer;
+  transition: ease-out 0.3s;
+}
+
+.navlinks-wrapper ul li:hover {
+  color: var(--green);
+  font-size: 1.1rem;
+}
+
+.navlinks-wrapper .btn:hover {
+  transform: scale(1.1);
+}
+
+/* Hero Styles */
+#hero-section .hero {
+  padding: 0 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.hero .hero-text {
+  flex: 1
+}
+
+.hero-text h1 {
+  font-size: 2.5rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.hero-text > p {
+  color: var(--gray-text);
+  font-weight: 500;
+  letter-spacing: 1px;
+  margin-bottom: 1.5rem;
+}
+
+.hero .btn-containers, .btn-containers .btn {
+  display: flex;
+  align-items: center;
+}
+
+.btn-containers .btn {
+  margin-right: 2rem;
+}
+
+.play-btn {padding: 1rem;}
+
+.play-btn i {
+  margin-right: 0.5rem;
+}
+
+.play-btn p {
+  font-size: 0.8rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+.btn-containers a {
+  color: var(--blue);
+  font-weight: 500;
+  font-size: 1rem;
+  letter-spacing: 1px;
+}
+
+.hero .hero-icons {
+  flex: 1;
+  position: relative;
+}
+
+.icon-wrapper {
+  width: 4rem;
+  border: 1px transparent;
+  border-radius: 50px;
+  background-color: var(--white);
+  box-shadow: 1px 1px 10px var(--gray-text);
+  padding: 0.75rem;
+  position: absolute;
+  transition: all ease-out 0.3s;
+  animation: fade-up 0.3s ease-out;
+}
+
+#icon-1 {
+  top: -10rem;
+  left: 0;
+  width: 3.5rem;
+  padding: 0.8rem 0.5rem;
+}
+
+#icon-2 {
+  top: -9rem;
+  left: 10rem;
+  width: 5rem;
+  padding: 0.75rem;
+}
+
+#icon-3 {
+  width: 5rem;
+  padding: 0.75rem;
+  top: -10rem;
+  left: 25rem;
+}
+
+#icon-4 {
+  left: 2rem;
+  top: -1rem;
+}
+
+#icon-5 {
+  left: 18rem;
+  width: 5rem;
+}
+
+#icon-6 {
+  top: 5rem;
+  left: 8rem;
+  width: 5rem;
+}
+
+#icon-7 {
+  top: 7rem;
+  left: 26rem;
+}
+
+
+/* Benefits Styles */
+.section-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.section-header h2 {
+  font-size: 2rem;
+  letter-spacing: 1px;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.section-header p {
+  color: var(--gray-text);
+  letter-spacing: 1px;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+#benefits .card-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.card-container .card {
+  width: 20%;
+  padding: 1.3rem 0.75rem;
+  box-shadow: 1px 3px 5px var(--gray-text);
+  transition: all ease-in-out 0.3s;
+  animation: fade-up ease-in-out 0.3s;
+}
+
+.card-container .card:hover {
+  transform: scale(1.1) translateY(-3%);
+}
+
+.card .card-img-container {
+  width: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+.card h3 {
+  font-weight: 600;
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+  display: inline-block;
+}
+
+.card p {
+  color: var(--gray-text);
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.card a {
+  color: var(--blue);
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.card span {
+  background-color: var(--green);
+  border: 1px solid transparent;
+  border-radius: 10px;
+  padding: 0.25rem 0.5rem;
+  color: var(--white);
+  margin-left: 0.5rem;
+  font-size: 0.8rem;
+}
+
+/* Prospective Styles */
+#prospective {
+  background-color: var(--off-white);
+}
+
+#prospective .container {
+  display: flex;
+  align-items: center;
+  padding: 3rem 0;
+}
+
+.container .prospective-text {
+  flex: 0.8rem;
+}
+
+.prospective-text h2 {
+  font-size: 1.75rem;
+  letter-spacing: 1px;
+  margin-bottom: 2rem;
+  font-weight: 500;
+}
+
+.container .prospective-img-container {
+  flex: 1;
+}
+
+/* Why Styles */
+#why {
+  margin-bottom: 5rem;
+}
+
+#why .section-header p {
+  padding: 0 15%;
+  line-height: 1.5;
+}
+
+#why .reason-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.reason-container .reason {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.reason .outer-circle {
+  width: 4rem;
+  height: 4rem;
+  background-color: var(--light-blue);
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+
+.reason .inner-circle {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 25px;
+  background-color: var(--blue);
+}
+
+.reason .after::after {
+  content: "";
+  position: absolute;
+  background-color: var(--light-blue);
+  height: 3px;
+  width: 10rem;
+  top: 50%;
+  left: 100%;
+}
+
+.reason .before::before {
+  content: "";
+  position: absolute;
+  background-color: var(--light-blue);
+  height: 3px;
+  width: 10rem;
+  top: 50%;
+  right: 100%;
+}
+
+.reason h4 {
+  font-size: 1.1rem;
+}
+
+/* Video Styles */
+#video {
+  margin-bottom: 3rem;
+}
+
+#video .video-container {
+  position: relative;;
+}
+
+.video-container .play {
+  border: 1px solid transparent;
+  background-color: var(--white);
+  border-radius: 50px;
+  box-shadow: 1px 1px 15px var(--gray-text);
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem 1.6rem;
+  font-size: 1.3rem;
+  position: absolute;
+  top: 50%;
+  left: 47%;
+  transition: all ease-out 0.3s;
+}
+
+.video-container .play:hover {
+  transform: scale(1.1);
+}
+
+/* Review Styles */
+#review .container {
+  display: flex;
+}
+
+.container .review-img-container {
+  flex: 1;
+  position: relative;
+}
+
+.review-img-container .dots-container {
+  position: absolute;
+}
+
+.review-img-container .headshot-container {
+  position: absolute;
+  width: 20%;
+}
+
+
+
+
+.container .review-text-container {
+  flex: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Animations */
+@keyframes fade-up {
+  from {
+    transform: scale(0.5) translateY(100%);
+  }
+  to {
+    transform: scale(1) translateY(0%);
+  }
+}

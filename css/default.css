@@ -1,0 +1,65 @@
+:root {
+  --white: rgb(255, 255, 255);
+  --blue: rgb(51, 102, 255);
+  --off-white: rgb(249, 250, 254);
+  --gray-text: rgb(104, 121, 137);
+  --light-blue: rgb(236, 242, 255);
+  --dark-blue: rgb(32, 51, 91);
+  --green: rgb(1, 200, 167);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+*, ::before, ::after {box-sizing: border-box;}
+
+section {
+  margin-bottom: 5rem;
+}
+
+ul, p, i, h1, h2, h3, h4, h5 {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+a {text-decoration: none;}
+a:visited {color: inherit;}
+
+img {
+  width: 100%;
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+button {
+  background-color: var(--white);
+  border: none;
+}
+
+.container {
+  width: 100%;
+  padding: 0 1rem;
+  margin: 0 auto;
+  margin-bottom: 3rem;
+}
+
+.btn {
+  display: inline-flex;
+  text-align: center;
+  cursor: pointer;
+  user-select: none;
+  border-radius: 25px;
+  padding: 0.75rem 1rem;
+  transition: ease-in-out 0.3s;
+  background-color: var(--blue);
+  color: var(--white);
+}
+
+
+@media (min-width: 1200px) {
+  .container {max-width: 1140px;}
+}
